@@ -166,7 +166,7 @@ public class Solution implements Runnable{
     }
 
     public void print_solution(){
-        System.out.println("total_profit " + total_profit);
+        //System.out.println("total_profit " + total_profit);
         for (int i = 0; i < my_payments.size(); i++){
             System.out.println(my_payments.get(i).getID() + " " + used_per_payment[i]);
         }
