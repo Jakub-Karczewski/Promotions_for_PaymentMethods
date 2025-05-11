@@ -18,4 +18,9 @@ t2, 10, 100 <br />
 PUNKTY, 6, 150 <br /> <br />
 W tym przypadku nie opłaca się zastosować nawet problemu plecakowego dla najbardziej opłacalnej metody płatności, bo jednak bardziej opłaca się wziąć za pomocą t1: Order2 i Order3, a za pomocą t2: Order2. <br />
 Jeśli by wziąć za pomocą t1: Order1 i Order2, to później nie możmy wziąć Order3 za pomocą t2. <br />
-W przypadku powyższym mamy max_profit 75 + 6 = 81, a w poprzednim 72 + 10 = 82
+W przypadku powyższym mamy max_profit 75 + 6 = 81, a w poprzednim 72 + 10 = 82 <br /> <br />
+Wydaje mi się również, że zastosowanie algorytmów związanych z problemem maksymalnego przepływu typu min cost max flow również nie będzie miało tutaj zastosowania, ponieważ wybór scieżek poszerzających może nie być optymalny <br /> + dodatkowo mamy warunek, że aby uzyskać rabaty musimy całkowicie uiścić opłatę punktami albo kartą, a przepływ raczej nie zadziała w ten sposób <br /> <br />
+Moim zdaniem rozwiązaniem, które mogłoby dać znacznie lepszy wynik mogłoby być zastosowanie ILP ze zmiennymi binarnymi, i maksymalizowaniem wyrażanie będącego sumą rabatów przy jednoczesnym minimalizowaniu użycia płatności kartą. Należałoby wówczas zastosować być może jakieś wagi do obu parametrów 
+tak aby przy tym samym rabacie premiować rozwiązania używające mniej karty, ale jednocześnie aby gorsze pod tym względem rozwiązanie nie było w stanie przewyższyć lepszego używając znacznie mniej razy płatności kartą. <br /> <br />
+Nie zdecydowałem się zastosować takiego podejścia tutaj, gdyż sądzę, że byłoby ono zbyt wolne. <br />
+
