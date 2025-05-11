@@ -1,0 +1,6 @@
+[
+  {"id": "ORDER1", "value": "100.00", "promotions": ["mZysk"]},
+  {"id": "ORDER2", "value": "200.00", "promotions": ["BosBankrut"]},
+  {"id": "ORDER3", "value": "150.00", "promotions": ["mZysk", "BosBankrut"]},
+  {"id": "ORDER4", "value": "50.00"}
+]
